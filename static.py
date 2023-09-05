@@ -44,9 +44,11 @@ while not found_name:
 
                     if(name_index == name_length):
                         found_name = True
-                        print((x, y, name))
+                        print("\nFound (end) at " + str((x, y)))
+                        print("Name should look like " + name)
 
                 else:
                     name_index = 0
 
 img.save(str_name + ".png")
+print("Saved to " + str_name + ".png")
